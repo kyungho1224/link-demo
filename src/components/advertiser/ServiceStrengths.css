@@ -1,0 +1,50 @@
+.service-strengths {
+  padding: 5rem 0;
+  background: #fff;
+}
+
+.strengths-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.strength-card {
+  text-align: center;
+  padding: 2.5rem 2rem;
+  background: #f9fafb;
+  border-radius: 16px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.strength-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.strength-icon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.strength-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.strength-card p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .service-strengths {
+    padding: 3rem 0;
+  }
+
+  .strengths-grid {
+    grid-template-columns: 1fr;
+  }
+}
